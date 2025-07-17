@@ -1,0 +1,51 @@
+# ========================
+# FICHIERS À IGNORER
+# ========================
+
+# Fichiers système (Mac / Windows)
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires des éditeurs
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+# ========================
+# TERRAFORM
+# ========================
+.terraform/                     # Dossier local de cache Terraform
+*.tfstate                       # Fichier d'état de l'infrastructure
+*.tfstate.backup                # Sauvegarde de l'état
+terraform.tfvars                # Variables sensibles (souvent locales)
+.terraform.lock.hcl             # Fichier de verrouillage des providers
+
+# ========================
+# ANGULAR / NODE.JS
+# ========================
+node_modules/                   # Dépendances Node.js
+dist/                           # Fichiers générés après build
+.angular/                       # Dossier temporaire Angular
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# ========================
+# JAVA / SPRING BOOT
+# ========================
+target/                         # Résultat de la compilation Maven
+*.jar                           # Archive Java générée
+*.war
+*.class                         # Fichiers compilés
+*.iml                           # Fichiers IntelliJ IDEA
+*.project
+*.classpath
+
+# ========================
+# DOCKER
+# ========================
+*.pid
+*.tar
+docker-compose.override.yml     # Fichiers de configuration temporaires
